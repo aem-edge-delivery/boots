@@ -10,6 +10,8 @@ footer .footer {
 }
 footer .footer p {
   margin: 0;
+  font-size: 14px;
+  font-weight: 400;
 }
 footer .footer p:nth-child(1) {
   border-bottom: 1px solid;
