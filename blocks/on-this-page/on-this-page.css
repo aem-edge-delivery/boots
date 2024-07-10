@@ -1,0 +1,130 @@
+
+.on-this-page-container {
+  text-align: left;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 0 !important;
+    display: inline-block;
+    width: 100%;
+}
+.on-this-page-wrapper {
+  width: 100%;
+  max-width: initial !important;
+  padding: 10px 7%;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  display: inline-block;
+}
+.on-this-page-container h2 {
+  color: #283C58;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 5%;
+}
+.on-this-page-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333333;
+  text-decoration: underline;
+}
+.on-this-page-container h4 {
+  color: #F2000F;
+  font-size: 21px;
+  line-height: 1.2;
+  font-weight: bold;
+  margin: 0;
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.on-this-page-container p.button-container {
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  margin: 0;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.on-this-page-container a.button {
+  border-style: solid;
+  border: none;
+  background-color: transparent;
+  color: #254D80;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.on-this-page > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.on-this-page > ul > li {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+
+.on-this-page .on-this-page-card-body {
+  margin: 0;
+  padding: 5px;
+  color: #003060;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  position: relative;
+}
+
+.on-this-page .on-this-page-card-image {
+  line-height: 0;
+}
+
+.on-this-page .on-this-page-card-body h2 {
+  margin-top: 0;
+  color: #003060;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.on-this-page > ul > li img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+
+
+@media (max-width: 1300px) {
+}
+@media (max-width: 900px) {
+  .on-this-page-container h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .on-this-page > ul > li { 
+    width: 100%;
+    display: inline-block;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+}

@@ -7,8 +7,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'faq-card-image';
-      else div.className = 'faq-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'dandruff-causes-card-image';
+      else div.className = 'dandruff-causes-card-body';
     });
     ul.append(li);
   });
@@ -16,19 +16,4 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
-
-// toggle according on button click
-let tag3 = document.getElementsByClassName("faq-container")[0].getElementsByTagName("p");
-
-for (var i = 0 ; i < tag3.length; i++) {
-  tag3[i].addEventListener('click' , showContent , false ) ; 
-}
-
-function showContent(){
-  if(this.parentElement.nextSibling.style.display=="block"){
-    this.parentElement.nextSibling.style.display="none";
-  } else {
-    this.parentElement.nextSibling.style.display="block";
-  }
-};
 

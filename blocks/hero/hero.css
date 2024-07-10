@@ -9,60 +9,73 @@ main .hero-container {
 }
   
 main .hero {
-  position: relative;
-  padding: 50px 10%;
-  min-height: 500px;
+  position: initial;
+  padding: 10px 7%;
+  background-color: #05054b;
+  margin: 175px 0 6rem;
+  height: 500px;
 }
 
 main .hero h1 {
   font-size: 45px;
   max-width: 525px;
   margin-right: auto;
-  color: #283c58;
-  margin-top: 12%;
+  color: #fff;
+  margin-top: 20px;
   margin-bottom: 15px;
+  text-align: center;
 }
 main .hero h1 strong {
   font-weight: 400;
 }
 main .hero h2 {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: 100;
   max-width: 525px;
-  color: #333333;
-  margin-top: 5px;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 main .hero h3 {
-  background-color: #dd0100;
-  color: #ffffff;
-  border-style: solid;
-  border: 1px solid #dd0100;
-  text-align: center;
-  width: fit-content;
-  cursor: pointer;
-  padding: 10px 25px;
   font-size: 16px;
-  font-weight: 500;
-  border-radius: 25px;
-  margin-top: 15px;
+  line-height: 30px;
+  font-weight: 100;
+  max-width: 525px;
+  color: #ffffff;
+  margin-top: 60px;
+  text-align: center;
 }
+
+main .hero h4 {
+  color: #05054b;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400;
+}
+
 
 main .hero picture {
   z-index: 1;
   position: relative;
   float: right;
-  width: 48%;
-  margin-top: -6%;
+  width: 490px;
+  max-height: 514px;
+  margin-top: -95px;
 }
 
 main .hero img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 570px;
   float: right;
-  max-height: 450px;
 }
 
 /* The Modal (background) */
@@ -246,7 +259,6 @@ main .global .hero h2 {
 
 @media (max-width: 1300px) {
   main .hero {
-    padding: 32px 20px;
     min-height: 500px;
   }
   main .hero h1 {

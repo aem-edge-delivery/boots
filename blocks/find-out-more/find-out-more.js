@@ -7,8 +7,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'tabs-card-image';
-      else div.className = 'tabs-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'find-out-more-card-image';
+      else div.className = 'find-out-more-card-body';
     });
     ul.append(li);
   });
@@ -16,8 +16,3 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
-
-
-// Setting TakeMeToTheWebsite link
-let urlIs = window.location.href.substring(0, window.location.href.indexOf('/global'))
-document.getElementsByClassName("tabs")[0].getElementsByTagName("a")[0].href = urlIs;

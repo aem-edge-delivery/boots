@@ -15,7 +15,7 @@
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
   --background-color: white;
-  --light-color: #eee;
+  --light-color: #e5f3f8;
   --dark-color: #ccc;
   --text-color: black;
 
@@ -67,10 +67,14 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
   display: none;
+  
 }
 
 body.appear {
   display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 header {

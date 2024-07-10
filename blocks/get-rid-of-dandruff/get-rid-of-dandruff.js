@@ -7,8 +7,8 @@ export default function decorate(block) {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
     [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'application-card-image';
-      else div.className = 'application-card-body';
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'get-rid-of-dandruff-card-image';
+      else div.className = 'get-rid-of-dandruff-card-body';
     });
     ul.append(li);
   });
@@ -16,3 +16,4 @@ export default function decorate(block) {
   block.textContent = '';
   block.append(ul);
 }
+

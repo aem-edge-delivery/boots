@@ -1,0 +1,108 @@
+
+.get-rid-of-dandruff-container {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 2% 0 0 !important;
+    display: inline-block;
+  }
+  .get-rid-of-dandruff-wrapper {
+    width: 100%;
+    max-width: initial !important;
+    padding: 10px 7%;
+    box-sizing: border-box;
+  }
+  .dandruff-content-wrapper {
+    width: 100%;
+    max-width: initial !important;
+    padding: 10px 7%;
+    box-sizing: border-box;
+  }
+  
+  
+  .get-rid-of-dandruff table tr {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+
+  .get-rid-of-dandruff-container h1 {
+    color: #05054b;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 10px 0 25px;
+    text-align: center;
+  }
+  .get-rid-of-dandruff-container h2 {
+    color: #05054b;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .get-rid-of-dandruff p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+
+  .get-rid-of-dandruff ul {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding-left: 15px;
+    margin: 10px 0;
+    list-style: none;
+  }
+
+
+  
+ 
+  
+
+
+
+
+  
+  @media (max-width: 600px) { 
+  
+  
+    .get-rid-of-dandruff   table {
+      display: block;
+    }
+    .get-rid-of-dandruff  table tr:nth-child(1) {
+      width: 100%;
+    }
+    .get-rid-of-dandruff  table tr:nth-child(2) {
+      width: 100%;
+    }
+    .get-rid-of-dandruff  table tr:nth-child(1) tr td:nth-child(1) {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+    .get-rid-of-dandruff  table tr:nth-child(1) tr td:nth-child(2) {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  

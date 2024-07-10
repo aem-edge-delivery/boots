@@ -1,0 +1,97 @@
+
+.symptoms-of-dandruff-container {
+    text-align: left;
+    margin-bottom: 60px;
+    padding: 10px 0 !important;
+  }
+  .symptoms-of-dandruff-wrapper {
+    width: 100%;
+    max-width: initial !important;
+    padding: 10px 7%;
+    box-sizing: border-box;
+  }
+  
+  
+  .symptoms-of-dandruff table tr:nth-child(1) {
+    width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .symptoms-of-dandruff table tr:nth-child(2) {
+    width: 55%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 30px;
+    overflow: hidden;
+  }
+  
+  .symptoms-of-dandruff h2 {
+    color: #05054b;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  .symptoms-of-dandruff p {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin: 5px 0;
+  }
+
+  .symptoms-of-dandruff ul {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding-left: 15px;
+    margin: 10px 0;
+  }
+
+
+  
+ 
+  
+
+
+
+
+  
+  @media (max-width: 600px) { 
+  
+  
+    .symptoms-of-dandruff   table {
+      display: block;
+    }
+    .symptoms-of-dandruff  table tr:nth-child(1) {
+      width: 100%;
+    }
+    .symptoms-of-dandruff  table tr:nth-child(2) {
+      width: 100%;
+    }
+    .symptoms-of-dandruff  table tr:nth-child(1) tr td:nth-child(1) {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+    .symptoms-of-dandruff  table tr:nth-child(1) tr td:nth-child(2) {
+      width: 100%;
+      padding: 0;
+      display: block;
+    }
+  
+  }
+  
+  
+  
+  
+  
+  
+  
