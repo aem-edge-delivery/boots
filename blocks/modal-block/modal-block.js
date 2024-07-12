@@ -1,0 +1,55 @@
+import { createOptimizedPicture } from '../../scripts/aem.js';
+
+export default function decorate(block) {
+  /* change to ul, li */
+  const ul = document.createElement('ul');
+  [...block.children].forEach((row) => {
+    const li = document.createElement('li');
+    while (row.firstElementChild) li.append(row.firstElementChild);
+    [...li.children].forEach((div) => {
+      if (div.children.length === 1 && div.querySelector('picture')) div.className = 'modal-block-image';
+      else div.className = 'modal-block-body';
+    });
+    ul.append(li);
+  });
+  ul.querySelectorAll('img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
+  block.textContent = '';
+  block.append(ul);
+}
+
+
+
+
+
+let ifModalEnabled = document.getElementsByClassName("modal-block-container")[0].getElementsByTagName("h1")[0].innerText;
+
+if(ifModalEnabled == 'enabled') {
+    let modalContentUrl = document.getElementsByClassName("modal-block-container")[0].getElementsByTagName("a")[0].getAttribute("href");
+
+    // Get the modal
+    var modal = document.createElement("div");
+    modal.classList.add("modal");
+    modal.innerHTML =  '<div class="modal-content">'+
+        '<span class="close">&times;</span>'+
+        '<iframe src="'+modalContentUrl+'" width="100%" height="100%"></iframe>'+
+      '</div>';
+    document.body.appendChild(modal);
+    modal.style.display = "block";
+
+    // Get the <span> element that closes the modal
+    var close = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    close.onclick = function() {
+        modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+    }
+
+}
+
+
